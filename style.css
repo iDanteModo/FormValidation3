@@ -1,0 +1,71 @@
+@import url('../node_modules/modern-normalize/modern-normalize.css');
+
+:root {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* DANTE CODE HERE -----------*/
+
+* { 
+    color-scheme: dark ;
+}
+
+body {
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+.email {
+    background-color: darkgray;
+    border: 1px transparent solid;
+}
+
+.email:focus {
+    outline: none;
+    background-color: rgb(130, 129, 129);
+}
+
+.email:invalid {
+    border: 1px red solid;
+    outline: none;
+    background-color: darkred;
+}
+
+.email:valid {
+    border: 1px green solid;
+    outline: none;
+}
+
+button {
+    align-self: center;
+}
